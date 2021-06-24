@@ -22,10 +22,11 @@ function modelLoaded() {
 
 function draw() {
     background("#11ff00");
-    document.getElementById("square_sides").innerHTML = "Side length of the Square will be = " + difference + "px";
+    document.getElementById("square_sides").innerHTML = "Font size will be = " + difference + "px";
     fill("#ff0000");
     stroke("#ff0000");
-    square(noseX, noseY, difference);
+    textSize(difference);
+    text("Gyan", 50, 200)
 }
 
 function gotPoses(result) {
